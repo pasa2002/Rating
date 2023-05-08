@@ -13,6 +13,10 @@ function addBackgroundToButton(buttonId) {
 }
 
 function submit(){
+    if (lastClickedButton === null) {
+        alert('Please choose a number');
+        return;
+    }
     document.getElementById('front-page').classList.add('hide');
     let submitForm = document.getElementById('thank-you');
     submitForm.classList.remove('hide')
