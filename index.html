@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Interactive rating component</title>
+</head>
+<body>
+
+<section id="front-page">
+
+  <div class="body-content">
+    <header>
+      <img src="images/icon-star.svg" alt="logo">
+    </header>
+
+    <div class="section-one" >
+      <h1>
+        How did we do?
+      </h1>
+      <p>
+        Please let is know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+    </div>
+
+    <div class="star-nr" id="star-nr">
+      <button id="button-star-1" onclick="addBackgroundToButton('button-star-1')">1</button>
+      <button id="button-star-2" onclick="addBackgroundToButton('button-star-2')">2</button>
+      <button id="button-star-3" onclick="addBackgroundToButton('button-star-3')">3</button>
+      <button id="button-star-4" onclick="addBackgroundToButton('button-star-4')">4</button>
+      <button id="button-star-5" onclick="addBackgroundToButton('button-star-5')">5</button>
+    </div>
+
+    <div class="submit">
+      <button id="submit-form" onclick="submit()">
+        Submit
+      </button>
+    </div>
+  </section>
+
+  <div id="thank-you" class="hide">
+
+  </div>
+
+
+
+</body>
+</html>

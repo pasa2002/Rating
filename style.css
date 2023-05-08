@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(215, 12%, 36%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#front-page{
+    background-color: var(--Dark-Blue);
+    border-radius: 2rem;
+    min-width: 25rem;
+    min-height: 25rem;
+}
+
+header{
+    background-color: var(--Dark-Blue);
+    padding: 3rem;
+    border-radius: 100%;
+}
+
+img{
+    background-color: var(--Medium-Grey);
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.section-one{
+    color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 30rem;
+}
+
+.section-one h1{
+    margin-bottom: 1rem;
+}
+
+.section-one p{
+    margin-bottom: 2.7rem;
+    color: var(--Light-Grey);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.star-nr{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: var(--Light-Grey);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.star-nr button{
+    background-color: var(--Medium-Grey);
+    border-radius: 100%;
+    padding:1rem;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-nr button:hover{
+    background-color: var(--Light-Grey);
+    cursor: pointer;
+    color: var(--White);
+}
+
+.button-style{
+    background-color: var(--Orange) !important;
+    color: var(--White);
+}
+
+.submit{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.submit button{
+    background-color: var(--Orange);
+    width: 70%;
+    padding: 0.4rem;
+    border-radius: 10rem;
+    border: none;
+    color: var(--White);
+    text-align: center;
+}
+
+.submit button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+
+#thank-you{
+    background-color: var(--Dark-Blue);
+    border-radius: 2rem;
+    min-width: 25rem;
+    min-height: 25rem;
+}
+
+.thank-you-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.thank-you-img img{
+    background-color: transparent;
+}
+
+.selection{
+    background-color: var(--Medium-Grey);
+    color: var(--Orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 20rem;
+    border-radius: 3rem;;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.selection p{
+    padding: 0.3rem;
+}
+
+.thankyou-text{
+    max-width: 30rem;
+    text-align: center;
+    color: var(--White);
+}
+
+.thankyou-text h2{
+    font-size: 2rem;
+}
+
+.thankyou-text p{
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: var(--Medium-Grey);
+}
